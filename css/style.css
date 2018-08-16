@@ -405,3 +405,7 @@ main p {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
+
+.main_con {
+  padding: 0px 0px 0px 0px;
+}
