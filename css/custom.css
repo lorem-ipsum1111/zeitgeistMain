@@ -2,21 +2,25 @@
 	background-color: #efefef;
 	padding: 0;
 	padding-top:50px;
+	background-image: url("/home/jeetu/bga.jpg");
+	-webkit-backdrop-filter: brightness(150%);
 }
 
 .about-body{
 	position: relative;
-	display: flex;
+	display: flex; 
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
 	width: 100%;
+	
 }
 
 .about-text{
 	color: #424242;
-	font-size: 1.2em;
-	letter-spacing: 0.25em;
+	font-size: 1.5em;
+	letter-spacing: auto;
+	line-height: 1.5em;
 	margin-top: -3em;
 	text-align: justify;
 }

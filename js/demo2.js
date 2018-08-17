@@ -24,6 +24,8 @@
 			if (callNow) func.apply(context, args);
 		};
     };
+
+    
     
     class Slideshow {
         constructor(el) {
@@ -95,6 +97,7 @@
                 this.rect = this.DOM.el.getBoundingClientRect();
                 this.updateFrame();
             }, 20));
+            window.setInterval(()=>this.navigate('next'),5000);
             
             document.addEventListener('keydown', (ev) => {
                 const keyCode = ev.keyCode || ev.which;
@@ -106,6 +109,7 @@
                 }
             });
         }
+        
         navigate(dir = 'next') {
             if ( this.isAnimating ) return false;
             this.isAnimating = true;
